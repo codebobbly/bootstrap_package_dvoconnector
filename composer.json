@@ -1,0 +1,62 @@
+{
+  "name": "rgu/bootstrap_package-dvoconnector",
+  "version": "1.0.0",
+  "type": "typo3-cms-extension",
+  "description": "Integrate Dvoconnector with Bootstrap-Package",
+  "autoload": {
+    "psr-4": {
+      "RGU\\BootstrapPackageDvoconnector\\": "Classes/"
+    }
+  },
+  "keywords": [
+    "TYPO3 CMS",
+    "bootstrap-package",
+    "DVO Connector",
+    "Extbase"
+  ],
+  "homepage": "https://github.com/codebobbly/bootstrap_package_dvoconnector",
+  "authors": [
+    {
+      "name": "codebobbly",
+      "role": "Developer",
+      "homepage": "https://github.com/codebobbly"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": ">=7.6.0",
+    "bk2k/bootstrap-package": ">=9.1.0",
+    "rgu/dvoconnector": ">=1.0.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.0",
+    "nimut/testing-framework": ">=1.0"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "RGU\\bootstrap_packageDvoconnector\\Tests\\": "Tests"
+    }
+  },
+  "replace": {
+    "bootstrap_package-dvoconnector": "self.version",
+    "typo3-ter/bootstrap_package-dvoconnector": "self.version"
+  },
+  "config": {
+    "vendor-dir": ".Build/vendor",
+    "bin-dir": ".Build/bin"
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "mkdir -p .Build/Web/typo3conf/ext/",
+      "[ -L .Build/Web/typo3conf/ext/bootstrap_package_dvoconnector ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/bootstrap_package_dvoconnector"
+    ]
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    },
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".Build/Web"
+    }
+  }
+}

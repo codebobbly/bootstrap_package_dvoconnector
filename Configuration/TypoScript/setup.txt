@@ -1,0 +1,71 @@
+[globalVar = GP:tx_dvoconnector_pi1|aID > 0]
+	page {
+		10 {
+			variables {
+				breadcrumbExtendedValue = USER
+				breadcrumbExtendedValue {
+					userFunc = RGU\BootstrapPackageDvoconnector\Hooks\TyposcriptUserFuncs->getBreadcrumbAssociation
+				}
+			}
+			settings {
+				breadcrumb {
+					extended = 1
+				}
+			}
+		}
+	}
+[global]
+
+[globalVar = GP:tx_dvoconnector_pi1|eID > 0]
+	page {
+		10 {
+			variables {
+				breadcrumbExtendedValue = USER
+				breadcrumbExtendedValue {
+					userFunc = RGU\BootstrapPackageDvoconnector\Hooks\TyposcriptUserFuncs->getBreadcrumbEvent
+				}
+			}
+			settings {
+				breadcrumb {
+					extended = 1
+				}
+			}
+		}
+	}
+[global]
+
+[globalVar = GP:tx_dvoconnector_pi1|anID > 0]
+	page {
+		10 {
+			variables {
+				breadcrumbExtendedValue = USER
+				breadcrumbExtendedValue {
+					userFunc = RGU\BootstrapPackageDvoconnector\Hooks\TyposcriptUserFuncs->getBreadcrumbAnnouncement
+				}
+			}
+			settings {
+				breadcrumb {
+					extended = 1
+				}
+			}
+		}
+	}
+[global]
+
+[globalVar = GP:tx_dvoconnector_pi1|fID > 0]
+	page {
+		10 {
+			variables {
+				breadcrumbExtendedValue = USER
+				breadcrumbExtendedValue {
+					userFunc = RGU\BootstrapPackageDvoconnector\Hooks\TyposcriptUserFuncs->getBreadcrumbFunctionary
+				}
+			}
+			settings {
+				breadcrumb {
+					extended = 1
+				}
+			}
+		}
+	}
+[global]
