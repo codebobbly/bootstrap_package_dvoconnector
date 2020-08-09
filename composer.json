@@ -41,7 +41,7 @@
     }
   },
   "replace": {
-    "bootstrap_package-dvoconnector": "self.version",
+    "rgu/bootstrap_package-dvoconnector": "self.version",
     "typo3-ter/bootstrap_package-dvoconnector": "self.version"
   },
   "config": {
