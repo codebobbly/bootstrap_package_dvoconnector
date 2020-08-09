@@ -40,10 +40,6 @@
       "RGU\\bootstrap_packageDvoconnector\\Tests\\": "Tests"
     }
   },
-  "replace": {
-    "rgu/bootstrap_package-dvoconnector": "self.version",
-    "typo3-ter/bootstrap_package-dvoconnector": "self.version"
-  },
   "config": {
     "vendor-dir": ".Build/vendor",
     "bin-dir": ".Build/bin"
